@@ -1,4 +1,4 @@
-# 🎬 videoRanking.py
+# 🎮 videoRanking.py
 
 A Python script to analyze and rank video files in a folder based on their technical quality.
 
@@ -10,7 +10,7 @@ A Python script to analyze and rank video files in a folder based on their techn
 - Raw technical data: resolution, video/audio bitrate, codecs, audio channels, source type
 - A technical quality score (per metric and total)
 
-The script is useful for comparing different versions of the same video (e.g., different encodings of a movie or lecture) to choose the best-quality file.
+The script is useful for comparing different versions of the same video (e.g., different encodings of a movie, TV episode, or recorded lecture) to choose the best-quality file.
 
 ---
 
@@ -48,11 +48,48 @@ Example structure:
 
 ## ▶️ Usage
 
-### Prerequisites
+### 📥 Prerequisites
 
 - Python 3.x
 - [MediaInfo](https://mediaarea.net/en/MediaInfo/Download) must be installed on your system
-- Install Python dependency:
+- Python library:
 
 ```bash
 pip install pymediainfo
+```
+
+### 🚀 Run the Script
+
+```bash
+python videoRanking.py /path/to/folder
+```
+
+- Replace `/path/to/folder` with the full path to the directory containing your video files.
+- The script will scan all video files in that folder and generate a detailed CSV report.
+
+---
+
+## 🎮 Supported Formats
+
+The script currently supports files with the following extensions:
+
+- `.mp4`
+- `.mkv`
+- `.avi`
+- `.mov`
+- `.flv`
+- `.webm`
+
+You can easily add more formats by editing the `VIDEO_EXTENSIONS` list in the script.
+
+---
+
+## 📄 License
+
+This project is licensed under the **GNU General Public License v3.0** (GPLv3).  
+See the [LICENSE](LICENSE) file for details.
+
+You are free to use, modify, and redistribute this script under the terms of the GPLv3.
+
+---
+
